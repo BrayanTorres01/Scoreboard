@@ -1,0 +1,80 @@
+/* I tried to download a font and use it but it didn't work */
+/* @font-face {
+    font-family: 'Danger';
+    src: url(../danger-on-the-motorway-font/);
+  } */
+
+/* fills entire screen */
+html {
+    height: 100%;
+}
+
+/* the background */
+body {
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Asset', serif;
+}
+
+/* everything within the background */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+/* picture banner */
+header {
+    background-color: red;
+    height: 200px;
+    text-align: center;
+}
+
+/* main scoreboard */
+.scoreboard {
+    background-color: white;
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 623px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Press Start 2P', system-ui;
+    
+}
+
+.scoreboard-numbers {
+    background-color: orange;
+    width: 180px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F94F6D;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Press Start 2P', system-ui;
+
+}
+.scoreboard-names {
+    color: #EEEEEE;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: aqua;
+    height: 200px;
+}
