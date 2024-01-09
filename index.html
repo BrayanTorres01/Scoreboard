@@ -15,9 +15,6 @@
 </head>
 
 <body>
-    <!-- connecting html and js -->
-    <script src="index.js"></script>
-
     <!-- Everything can fit better  -->
     <div class="container">
 
@@ -31,21 +28,23 @@
                 <div>
                     <h3 class="scoreboard-names">HOME</h3>
                     <h2 class="scoreboard-numbers" id="count-el1">0</h2>
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="leftIncrement1()">+1</button>
+                    <button onclick="leftIncrement2()">+2</button>
+                    <button onclick="leftIncrement3()">+3</button>
                 </div>
                 <div>
-                    <p>timer</p>
-                    <button id="timer-btn">Start</button>
-                    <button>Reset</button>
+                    <h2>Set Timer (Minutes):</h2>
+                    <input type="number" id="timer-input" min="1" step="1" value="1">
+                    <p id="timer-display">0:00</p>
+                    <button onclick="startTimer()">START</button>
+                    <button onclick="resetTimer()">Reset</button>
                 </div>
                 <div>
                     <h3 class="scoreboard-names">GUEST</h3>
                     <h2 class="scoreboard-numbers" id="count-el2">0</h2>
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="rightIncrement1()">+1</button>
+                    <button onclick="rightIncrement2()">+2</button>
+                    <button onclick="rightIncrement3()">+3</button>
                 </div>
         </main>
 
@@ -54,6 +53,9 @@
             
         </footer>
 
+         <!-- connecting html and js -->
+         <!-- DON'T put it at the beggining. Your JS won't work if u do -->
+        <script src="index.js"></script>
         
 
 

@@ -57,7 +57,7 @@ header {
 
 .scoreboard-numbers {
     background-color: orange;
-    width: 180px;
+    width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
