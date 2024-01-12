@@ -11,17 +11,18 @@ html {
 
 /* the background */
 body {
-    background-color: blue;
+    background-image: url(images/scoreboardsb2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
+    position: relative;
 }
 
 .title {
     margin: 0;
     padding-top: 50px;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Asset', serif;
 }
 
@@ -34,14 +35,15 @@ body {
 
 /* picture banner */
 header {
-    background-color: red;
+    /* background-color: red; */
     height: 200px;
     text-align: center;
+    color: white;
 }
 
 /* main scoreboard */
 .scoreboard {
-    background-color: white;
+    background-color: black;
     display: flex;
     justify-content: row;
     justify-content: space-around;
@@ -56,9 +58,9 @@ header {
 }
 
 .scoreboard-numbers {
-    background-color: orange;
-    width: 200px;
-    height: 200px;
+    background-color: black;
+    width: 275px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +76,57 @@ header {
     padding-top: 10px;
 }
 
+.buttons {
+    align-items: center;
+    height: 20px;
+    width: 50px;
+    background-color: black;
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#start-btn {
+    height: 20px;
+    width: 100px;
+    background-color: green;
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#reset-btn {
+    height: 20px;
+    width: 100px;
+    background-color: red;
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#pause-btn {
+    margin-top: 10px;
+    height: 20px;
+    width: 100px;
+    background-color: yellow;
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#timer-display {
+    color: #EEEEEE;
+}
+
+#set-timer-heading {
+    color: #EEEEEE;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+
+
 footer {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 200px;
 }

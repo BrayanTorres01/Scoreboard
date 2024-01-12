@@ -9,7 +9,7 @@ let countRight = 0
 let timerDisplay = document.getElementById("timer-display")
 let timerInput = document.getElementById("timer-input")
 let timerInterval
-let timerSeconds = 0; 
+let timerSeconds = 0
 
 // functions that will allow the buttons to increment the scoreboard
 function leftIncrement1(){
@@ -45,8 +45,6 @@ function rightIncrement3(){
 function startTimer() {
     // Clear any existing intervals
     clearInterval(timerInterval)
-    // Reset timer seconds
-    timerSeconds = 0
     // Update the timer every second
     // setInterval is a builtIn fucntion
     const durationInMinutes = parseInt(timerInput.value, 10)
@@ -81,5 +79,13 @@ function resetTimer() {
     // Reset timer seconds and display
     timerSeconds = 0
     timerDisplay.innerText = "0:00"
+    countRight = 0;
+    countLeft = 0;
+    numLeft.innerText = 0
+    numRight.innerText = 0
 }
 
+// Will pause the timer
+function pauseTimer() {
+    clearInterval(timerInterval)
+}
