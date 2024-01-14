@@ -130,11 +130,14 @@ footer {
     height: 100px;
 }
 
+/* used flexed box to relocated the images to the right of the screen */
 .social-logos-container {
     display: flex;
     justify-content: flex-end;
    
 }
+
+/* resized the images */
 img {
     height: 30px;
     width: 30px;
@@ -146,13 +149,3 @@ img {
     font-size: 15px;
     font-family: 'Asset', serif;
 }
-/* 
-.social-logos-github {
-    height: 10px;
-    width: 10px;
-}
-
-.social-logos-linkedin {
-    height: 10px;
-    width: 10px; */
-/* } */
