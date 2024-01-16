@@ -4,10 +4,44 @@
     src: url(../danger-on-the-motorway-font/);
   } */
 
+/* Major breakpoint. Anything under 600px will scale down the website */
+/* Anything <600px,601px,768px, 992px, 1200px */
+/* Media query */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 601px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
 /* fills entire screen */
 html {
     height: 100%;
-}
+} 
 
 /* the background */
 body {
@@ -26,17 +60,14 @@ body {
     font-family: 'Asset', serif;
 }
 
-/* everything within the background */
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1024px;
-}
+    width: 1200px;
+} 
 
 /* picture banner */
 header {
-    /* background-color: red; */
-    height: 100px;
     text-align: center;
     color: white;
 }
@@ -125,16 +156,11 @@ header {
     padding-top: 10px;
 }
 
-footer {
-    /* background-color: aqua; */
-    height: 100px;
-}
 
 /* used flexed box to relocated the images to the right of the screen */
 .social-logos-container {
     display: flex;
-    justify-content: flex-end;
-   
+    justify-content: flex-end;  
 }
 
 /* resized the images */
